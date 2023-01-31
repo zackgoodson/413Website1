@@ -1,0 +1,9 @@
+﻿body {
+    background-color: black;
+}
+
+
+label {
+    display: inline-block;
+    color: forestgreen;
+}

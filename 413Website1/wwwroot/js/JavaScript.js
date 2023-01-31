@@ -3,42 +3,32 @@
 
     //Initialize grade code
     var letter = "A";
-    //Calculate grade code
     if (grade >= 94) {
         letter = "A";
-    }
-    else if (grade >= 90) {
+    } else if (grade >= 90) {
         letter = "A-";
-    }
-    else if (grade >= 87) {
+    } else if (grade >= 87) {
         letter = "B+";
-    }
-    else if (grade >= 84) {
+    } else if (grade >= 84) {
         letter = "B";
-    }
-    else if (grade >= 80) {
+    } else if (grade >= 80) {
         letter = "B-";
-    }
-    else if (grade >= 77) {
+    } else if (grade >= 77) {
         letter = "C+";
-    }
-    else if (grade >= 74) {
+    } else if (grade >= 74) {
         letter = "C";
-    }
-    else if (grade >= 70) {
+    } else if (grade >= 70) {
         letter = "C-";
-    }
-    else if (grade >= 67) {
+    } else if (grade >= 67) {
         letter = "D+";
-    }
-    else if (grade >= 64) {
+    } else if (grade >= 64) {
         letter = "D";
-    }
-    else if (grade >= 60) {
+    } else if (grade >= 60) {
         letter = "D-";
-    }
-    else {
+    } else if (grade) {
         letter = "E";
+    } else {
+        alert("I'm not happy Bob")
     }
 
     //Display grade code and percentage
