@@ -13,10 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="wwwroot\index.html" />
-  </ItemGroup>
-
-  <ItemGroup>
+    <Folder Include="Models\" />
     <Folder Include="wwwroot\lib\Bootstrap\" />
   </ItemGroup>
 
