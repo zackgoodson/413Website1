@@ -4,6 +4,7 @@
 
 
 label {
-    display: inline-block;
     color: forestgreen;
+    width: 50px;
+    display: inline-block;
 }

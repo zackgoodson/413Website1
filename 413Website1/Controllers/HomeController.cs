@@ -1,8 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using _413Website1.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+
 
 namespace _413Website1.Controllers
 {
@@ -12,7 +14,15 @@ namespace _413Website1.Controllers
         {
             return View();
         }
+
+        [HttpGet]
         public IActionResult Calculator()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Calculator (CalculateModel model)
         {
             return View();
         }

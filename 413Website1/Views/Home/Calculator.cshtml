@@ -2,31 +2,36 @@
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
 @{
+    ViewData["Title"] = "Calkyulaeshunz";
 }
 
-<h2>Grade Calculator</h2>
-<form>
+@model CalculateModel;
 
-    <label>Assignments</label>
-    <input id="assignment" class="form-control" />
+<h2>Grade Calculator</h2>
+<form method="post" >
+
+    <label>Assignments: </label>
+    <input id="assignment" asp-for="Assignment" />
     <br />
-    <label>Group Project</label>
-    <input id="pg" class="form-control" />
+    <label>Group Project: </label>
+    <input id="pg" asp-for="Pg" />
     <br />
-    <label>Quizzes</label>
-    <input id="quiz" class="form-control" />
+    <label>Quizzes: </label>
+    <input id="quiz" asp-for="Quiz"/>
     <br />
-    <label>Midterm Exam</label>
-    <input id="midterm" class="form-control" />
+    <label>Midterm Exam: </label>
+    <input id="midterm" asp-for="Midterm"/>
     <br />
-    <label>Final Exam</label>
-    <input id="final" class="form-control" />
+    <label>Final Exam: </label>
+    <input id="final" asp-for="Final"/>
     <br />
-    <label>INTEX</label>
-    <input id="intex" class="form-control" />
+    <label>INTEX: </label>
+    <input id="intex" asp-for="Intex"/>
     <br />
-    <label id="finalGrade">Final Grade</label>
+    <label id="finalGrade" name="finalgrade">Final Grade: </label>
     <br />
-    <input id="btnSend" type="button" value="calculate" />
+    <input id="btnSend" type="submit" value="Calculate" />
+
+    <div asp-validation-summary="All"></div>
 </form>
 
