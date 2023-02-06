@@ -7,31 +7,42 @@
 
 @model CalculateModel;
 
+
 <h2>Grade Calculator</h2>
-<form method="post" >
+
+<!-- Form for collecting Grade Calculator Inputs-->
+<form method="post">
 
     <label>Assignments: </label>
     <input id="assignment" asp-for="Assignment" />
     <br />
+
     <label>Group Project: </label>
     <input id="pg" asp-for="Pg" />
     <br />
+
     <label>Quizzes: </label>
-    <input id="quiz" asp-for="Quiz"/>
+    <input id="quiz" asp-for="Quiz" />
     <br />
+
     <label>Midterm Exam: </label>
-    <input id="midterm" asp-for="Midterm"/>
+    <input id="midterm" asp-for="Midterm" />
     <br />
+
     <label>Final Exam: </label>
-    <input id="final" asp-for="Final"/>
+    <input id="final" asp-for="Final" />
     <br />
+
     <label>INTEX: </label>
-    <input id="intex" asp-for="Intex"/>
+    <input id="intex" asp-for="Intex" />
     <br />
+
     <label id="finalGrade" name="finalgrade">Final Grade: </label>
     <br />
     <input id="btnSend" type="submit" value="Calculate" />
 
+    <!-- Outputs regulatory data for the form-->
     <div asp-validation-summary="All"></div>
+
 </form>
 

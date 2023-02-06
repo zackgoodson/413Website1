@@ -15,12 +15,14 @@ namespace _413Website1.Controllers
             return View();
         }
 
+        // Gets the Calculator form view
         [HttpGet]
         public IActionResult Calculator()
         {
             return View();
         }
 
+        // Overloading to post the form object into the model
         [HttpPost]
         public IActionResult Calculator (CalculateModel model)
         {
